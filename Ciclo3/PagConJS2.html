@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Hoja De Vida</title>
+</head>
+
+<body>
+    <center><img style="width: 20%;" src="https://i.ytimg.com/vi/_sbdZLbyAGs/sddefault.jpg">
+        <br>
+        <h2>EST. Ing Sistemas UFPS</h2>
+        <button onclick="infoPer()" class="btn btn-success">Informacion Personal</button>
+        <button onclick="estudios()" class="btn btn-success">Estudios</button>
+        <button onclick="expLab()" class="btn btn-success">Experiencia Laboral</button>
+        <button onclick="contacts()" class="btn btn-success">Contactos</button>
+    </center>
+
+    <div class="container" id="div_informacion" name="div_informacion"></div>
+
+    <script>
+        function infoPer() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul>"
+                + "<li> <strong>Nombre:</strong> Yeiner Anaya</li>"
+                + "<li><strong>ID:</strong> 21001254588</li>"
+                + "<li><strong>Ciudad:</strong> San José de Cúcuta</li>"
+                + "</ul>"
+                + "</div>"
+                + "<button onclick=\"otrocorreo()\" class='btn btn-success'>Otro Correo</button>";
+            $("#div_informacion").html(inf);
+        }
+
+        function otrocorreo() {
+            var info = "Aqui hay otro correo <em>yeinerdanielad@ufps.edu.co</em><br><br>"
+                + "<button onclick=\"infoPer()\" class='btn btn-warning'>Regresar</button>";
+            $("#div_informacion").html(info);
+        }
+
+        function estudios() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul>"
+                + "<li> <strong>Primaria:</strong> Col Hernando Acevedo</li>"
+                + "<li> <strong>Secundaria 6-7:</strong> Col Simon Bolivar</li>"
+                + "<li> <strong>Secundaria 8-9:</strong> ITI Salesiano</li>"
+                + "<li> <strong>Media 10-11:</strong> IE San Francisco De Sales</li>"
+                + "<li> <strong>Pregrado:</strong> UFPS -- Estudiante en la actualidad</li>"
+                + "</ul>"
+                + "</div>";
+            $("#div_informacion").html(inf);
+        }
+        function expLab() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul>"
+                + "<li> <strong>No Aplica:</strong> No hay experiencia laboral</li>"
+                + "</ul>"
+                + "</div>";
+            $("#div_informacion").html(inf);
+        }
+        function contacts() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul>"
+                + "<li> <strong>Tel:</strong> 3174114297</li>"
+                + "<li> <strong>Correo A:</strong> capitan.yeiner@gmail.com</li>"
+                + "<li> <strong>Correo B:</strong> yeinerdanielad@ufps.edu.co</li>"
+                + "<li> <strong>Correo C:</strong> yeinerd@uninorte.edu.co</li>"
+                + "<li> <strong>Correo D:</strong> yeida06@outlook.com</li>"
+                + "<li> <strong>Instagram:</strong> ydanaya06</li>"
+                + "</ul>"
+                + "</div>";
+            $("#div_informacion").html(inf);
+        }
+    </script>
+
+</body>
+
+</html>

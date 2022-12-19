@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<script>
+    function saludando() {
+        alert("Hola mundo");
+    }
+    //////////////////////////
+    function mensajeVar() {
+        var nombreVariable = "Información de variable"
+        alert(nombreVariable);
+    }
+    //////////////////////////
+    function otraPagina() {
+        window.open("https://www.google.com");
+    }
+    ///////////////////////////
+    function publicar() {
+        var info = "Información de variable"
+        $("#div_contenido").html(info);
+    }
+    ///////////////////////////
+    function publicar2() {
+        var info = "Información numero 2"
+            + " <br><strong>este es otro codigo</strong>"
+            + " <br>este es otro";
+        $("#div_contenido").html(info);
+    }
+    ///////////////////////////
+    function limpiar() {
+        var info = ""
+        $("#div_contenido").html(info);
+    }
+</script>
+
+<body>
+    <button onclick="saludando()" class="btn btn-success">Mensaje Directo</button>
+    <button onclick="mensajeVar()" class="btn btn-info">Mensaje de variable</button>
+    <button onclick="otraPagina()" class="btn btn-warning">Google</button>
+    <hr>
+    <button onclick="publicar()" class="btn btn-danger">Publicacion en div</button>
+    <button onclick="publicar2()" class="btn btn-danger">Publicacion en div2</button>
+    <button onclick="limpiar()" class="btn btn-success">limpiar div</button>
+    <hr>
+
+    <div id="div_contenido" name="div_contenido">
+
+    </div>
+
+</body>
+
+</html>

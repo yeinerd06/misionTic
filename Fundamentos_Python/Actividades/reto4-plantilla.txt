@@ -1,0 +1,12 @@
+cantidad de sucursales ---> n
+numero de diferentes tipos de medicamento ---> k
+cantidad de pacientes ---> m
+	si n o k son menores a 1 se leen de nuevo; hasta que sean correctos
+para las n sucursales, se lee la cantidad de medicamentos disponibles *en una sola 
+linea*
+para los m pacientes, y & o & l & s & d
+y--->sucursal donde será atendido
+o--->tipo de medicamento solicitado
+l--->número de existencias solicitadas
+s--->presion sistolica
+d--->presion diastólica
